@@ -1,0 +1,21 @@
+
+header {
+    margin: 0;
+    border-bottom: 2px solid black;
+
+r h1 {
+    text-align: center;
+    color: $darkRed;
+    font-family: $fontRighteous;
+
+}
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}

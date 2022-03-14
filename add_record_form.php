@@ -27,19 +27,23 @@ include('includes/header.php');
             </select>
             <br>
             <label>Name:</label>
-            <input type="input" name="name">
+            <input type="input" name="name" placeholder="Add Food Name" required>
             <br>
 
             <label>List Price:</label>
-            <input type="input" name="price">
-            <br>        
+            <input type="input" name="price" placeholder="Add food price" pattern=".{1,4}" required title="4 characters max">
+            <br>   
             
+            <label>Number:</label>
+            <input type="input" name="number" placeholder="Add Order Number" required>
+            <br>
+
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
             <br>
-            
+
             <label>&nbsp;</label>
-            <input type="submit" value="Add Record">
+            <input type="submit" value="Add Food">
             <br>
         </form>
         <p><a href="index.php">View Homepage</a></p>

@@ -1,6 +1,7 @@
 <?php
 require_once('database.php');
 
+
 // Get category ID
 if (!isset($category_id)) {
 $category_id = filter_input(INPUT_GET, 'category_id', 
@@ -42,7 +43,11 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>Record List</h1>
+
+
+<h1> FRIDAY 4PM - 8PM * SATURDAY 4PM - 8PM * SUNDAY 4PM - 8PM</h1>
+<h1> TEL: 041 984 5547</h1>
+<h1> WEB: takeawayfood.ie </h1>
 
 <aside>
 <!-- display a list of categories -->
@@ -67,6 +72,7 @@ include('includes/header.php');
 <th>Image</th>
 <th>Name</th>
 <th>Price</th>
+<th> Order Number</th>
 <th>Delete</th>
 <th>Edit</th>
 </tr>
@@ -75,6 +81,7 @@ include('includes/header.php');
 <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $record['name']; ?></td>
 <td class="right"><?php echo $record['price']; ?></td>
+<td><?php echo $record['number']; ?></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
 <input type="hidden" name="record_id"
@@ -94,7 +101,7 @@ value="<?php echo $record['categoryID']; ?>">
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_record_form.php">Add Record</a></p>
+<p><a href="add_record_form.php">Add Order</a></p>
 <p><a href="category_list.php">Manage Categories</a></p>
 </section>
 <?php
