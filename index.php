@@ -72,7 +72,7 @@ include('includes/header.php');
 <th>Image</th>
 <th>Name</th>
 <th>Price</th>
-<th> Order Number</th>
+<th>Order Number</th>
 <th>Delete</th>
 <th>Edit</th>
 </tr>
